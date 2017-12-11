@@ -26,9 +26,8 @@ header a {
   color: #C32884;
 }
 
-.quote {
-  font-weight: normal;
-  margin: 2em 0;
+h2 {
+  text-align: center;
 }
 
 .masonry {
@@ -46,8 +45,24 @@ header a {
   padding: 1em;
   margin: 0 0 1.5em;
   width: 100%;
-  border: 1px solid #C32884;
+  border: 1px solid lightgrey;
   border-radius: 5px;
+}
+
+.quotes .item {
+  background: linear-gradient(to left top, #C32884, #633B93);
+  color: white;
+  border: none;
+}
+
+.stats .item {
+  background: linear-gradient(to left top, #E69138, rgb(204, 111, 19));
+  color: white;
+  border: none;
+}
+
+.stats .item h2 {
+  font-size: 1em;
 }
 
 .item img {
@@ -55,7 +70,16 @@ header a {
   border-radius: 4px;
   margin-bottom: 0.5em;
 }
- 
+
+.partners .item {
+  padding: 0;
+  border: none;
+}
+
+.partners .item img {
+  margin-bottom: 0;
+}
+
 .item a {
   text-decoration: none;
   color: black;
@@ -94,6 +118,11 @@ a.press {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
+  }
+  .masonry.partners {
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
   }
 }
 
